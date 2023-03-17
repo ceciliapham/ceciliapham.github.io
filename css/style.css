@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #F9EBEA;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FADBD8;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2C3E50;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    background-color: #F1948A;
+    color: white;
+  }
+  
+  .main {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    color: #2C3E50;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #5D6D7E;
+  }
+  
+  .section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .section.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
